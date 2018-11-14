@@ -12,6 +12,6 @@ app.use(express.static(path.join(__dirname, '../client')));
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: false}));
 
-mongoose.connect('mongodb://admin:admin123@ds219181.mlab.com:19181/eventdetails');
+mongoose.connect('mongodb://mlablink/schemaname');
 app.use('/', router);
 module.exports=app;
