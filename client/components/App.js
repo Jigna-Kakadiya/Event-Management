@@ -1,22 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import axios from 'axios';
-import Navigation from './Navigation'; 
+import Navigation from './Navigation';
+import Main from './Main';
+import '../css/bootstrap.min.css' 
+import '../css/App.css';
 
+const App = () => (
+  <div className="container">
+    <Navigation />
+	<Main />
+  </div>
+)
 
-export default class App extends React.Component {
-
-constructor() {
-    super();
-  }
-render() {
-	return (
-	<div>
-		<Navigation />
-		<div className="container">
-			<h1>My Event</h1>
-		</div>
-	</div>
-);
-}
-}
+export default App

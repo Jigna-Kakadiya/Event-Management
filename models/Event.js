@@ -3,10 +3,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var eDetailsSchema = new Schema({
-  sname: String,
   activity: String,
   company: String,
-  start: String,
-  end: Number
+  start: Date,
+  end: Date
 });
-module.exports = mongoose.model('EventDetail', eDetailsSchema);
+module.exports = mongoose.model('Event', eDetailsSchema);
